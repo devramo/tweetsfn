@@ -42,7 +42,6 @@ exports.handler = async function(event, context, response) {
     maxId = new Big(tweets[tweets.length - 1].id_str).minus(1).toString();
   }
 
-  response.
   return {
     statusCode: 200,
     body: JSON.stringify({tweets})
